@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+    <head>
+        <title>VIEW SHARES</title>
+    </head>
+    <body>
+        <h:form>
+            <table>
+                <tr>
+                    <td>
+                        <h:selectOneMenu value="#{shareBean.compName}">
+   			<f:selectItem itemValue="Microsoft" itemLabel="Microsoft" />
+   			<f:selectItem itemValue="Google" itemLabel="Google" />
+   			<f:selectItem itemValue="Apple" itemLabel="Apple" />
+   			<f:selectItem itemValue="Oracle" itemLabel="Oracle" />
+                </h:selectOneMenu>
+                        <h:commandButton value="View Shares" action ="#{shareBean.view_shares()}"/>
+                    </td>
+                </tr>
+            </table>
+            
+            <h1>The total no. of shares of #{shareBean.compName} are #{shareBean.sumOfShares()} </h1>
+            For total Value Click Here <h:commandButton value="Click Here" action="#{shareBean.assetPage()}"/>
+                     
+             <table><tr><td>
+                        Click Here to go back to Main Page <h:commandButton value="Back" action ="#{shareBean.index()}"/></td>
+                   </tr>
+            </table>
+                   
+                                
+       
+       
+            
+        </h:form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title>Result</title>
+    </head>
+    <body><h:form>
+            <li><h2>You Bought: #{shareBean.no_shares} Shares of #{shareBean.compName} at #{shareBean.retrievePrice()}</h2></li>
+            <br> To go back to main page Click Here! <h:commandButton value="Main " action="#{shareBean.index()}"> 
+            </h:commandButton></br>
+        
+        <br><br> To do another transaction Click Here<h:commandButton value="Buy" action="#{shareBean.buy()}"/></br></br>
+
+        </h:form>
+    </body>
+
+</html>

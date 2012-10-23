@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+      <h:form>
+            <table>
+                <td><tr>
+                        You Selected : #{shareBean.compName} and its current price is  is #{shareBean.retrievePrice()}
+                        <br>Enter No. of Shares you want to Sell  <h:inputText value="#{shareBean.no_shares}"/></br>
+                        <br><h:commandButton value="Sell" action="#{shareBean.sell_submit()}"/></br>
+                
+            
+            <br>
+                <br>
+                    <h3 align ="Bottom">Click Here to go back to Main Page <h:commandButton value="Back" action ="#{shareBean.index()}"/></h3>
+                    <h3 align ="Bottom"> Click Here to go back to Previous Page <h:commandButton value="Back" action ="#{shareBean.sell()}"/></h3>
+                </br></br>
+                    </tr>
+                </td>
+            </table>
+        
+        </h:form>
+    </head>
+
+</html>

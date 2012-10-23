@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+    <head>
+        <title>Sell Shares</title>
+    </head>
+    <body>
+       <h:form>
+             
+            <h:selectOneMenu value="#{shareBean.compName}">
+   			<f:selectItem itemValue="Microsoft" itemLabel="Microsoft" />
+   			<f:selectItem itemValue="Google" itemLabel="Google" />
+   			<f:selectItem itemValue="Apple" itemLabel="Apple" />
+   			<f:selectItem itemValue="Oracle" itemLabel="Oracle" />
+                </h:selectOneMenu>
+           <h:commandButton value="Get Price" action ="#{shareBean.sellPrice()}"/>
+        </h:form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+General Information:
+Share MT is the web project
+Share MTE is the Enterprise Application
+ShareTranEJBNew is the EJB for the application.
+ShareManagement.jar and executablesharemanager.jar files are included with this, you will have to import them in your EJB library. Otherwise it will show an exception.
+
+Note: 
+
+
+While building the Enterprise Application you will encounter an error about exception, 
+but you can still run the program without any problems with that error alert. The application
+is divided in 2 ways, one you can view without any secure admin login and second is by accessing 
+the glassfish https server by click on the link on index page to login as admin. The username and
+password for that are admin and password respectively.
+
+
+Application works Smoothly!
+
+
+ENJOY!
+
+
+ 
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>SHARE MANAGEMENT SYSTEM</title>
+    </h:head>
+    <h:body>
+        <h1 align="Center" style="bold"> Welcome to Share Transaction Management System</h1>
+        
+            <h:form>
+                <br>    <h1 align="center">
+                        <h:commandButton id ="buy" value="Buy Shares" action="#{shareBean.buy()}"/>
+                        <h:commandButton id ="sell" value="Sell Shares" action="#{shareBean.sell()}"/>
+                        <h:commandButton id ="view" value="View Shares" action="#{shareBean.view_shares()}"/>
+                        <h:commandButton id ="view_trans" value="View Transaction History" action="#{shareBean.view_trans()}"/>
+                        </h1></br>
+        </h:form>
+       Re-Login to the<a href="secured/securedP.xhtml"> Secured Page</a>
+    </h:body>
+</html>
+
